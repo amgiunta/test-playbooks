@@ -5,4 +5,4 @@
   hosts: "{{hosts}}"
   tasks:
     - name: Add new user
-      command: useradd "{{user_name}}"
+      command: "sudo useradd -m {{user_name}}"
