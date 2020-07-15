@@ -5,5 +5,4 @@
   hosts: "{{hosts}}"
   tasks:
     - name: Add new user
-      useradd:
-        name: "{{user_name}}"
+      command: useradd "{{user_name}}"
