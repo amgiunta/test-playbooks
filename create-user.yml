@@ -2,8 +2,8 @@
   vars:
     hosts: localhost
     user_name: foo
-  hosts: {{hosts}}
+  hosts: "{{hosts}}"
   tasks:
     - name: Add new user
       useradd:
-        name: {{user_name}}
+        name: "{{user_name}}"
