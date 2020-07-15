@@ -1,0 +1,9 @@
+- name: Add User
+  vars:
+    hosts: localhost
+    user_name: foo
+  hosts: {{hosts}}
+  tasks:
+    - name: Add new user
+      useradd:
+        name: {{user_name}}
